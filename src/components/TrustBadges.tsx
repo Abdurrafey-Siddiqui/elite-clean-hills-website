@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { ShieldCheck, UserCheck, HardHat, FileText } from 'lucide-react';
 
 const brands = [
   { name: "Google", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" },
@@ -7,27 +8,33 @@ const brands = [
   { name: "Facebook", logo: "https://upload.wikimedia.org/wikipedia/commons/8/89/Facebook_Logo_%282019%29.svg" },
 ];
 
+const credentials = [
+  { icon: ShieldCheck, text: "Compliance Focused" },
+  { icon: UserCheck, text: "Police Checked" },
+  { icon: HardHat, text: "White Card & EWP" },
+  { icon: FileText, text: "WWCC Certified" }
+];
+
 export default function TrustBadges() {
   return (
-    <section className="py-12 bg-white border-b border-slate-100">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <p className="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest mb-8">
-          Trusted by homeowners & reviewed on
-        </p>
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-          {brands.map((brand, idx) => (
-            <motion.img
-              key={idx}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              src={brand.logo}
-              alt={`${brand.name} reviews`}
-              className="h-8 md:h-10 object-contain"
-              referrerPolicy="no-referrer"
-            />
-          ))}
+    <section className="bg-white border-b">
+
+      {/* Credentials Banner */}
+      <div className="bg-slate-900 py-4">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex flex-wrap justify-center sm:justify-between items-center gap-4 text-white/90">
+            <div className="text-sm font-bold tracking-widest uppercase text-brand-blue hidden md:block">
+              Fully Qualified & Compliant
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+              {credentials.map((cred, idx) => (
+                <div key={idx} className="flex items-center gap-2 text-sm font-medium">
+                  <cred.icon className="w-5 h-5 text-brand-accent" />
+                  <span>{cred.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

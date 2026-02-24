@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-white mb-6">Sydney Pressure Cleaners</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Eliteclean</h3>
             <p className="text-slate-400 max-w-md mb-8 leading-relaxed">
-              Transforming homes across Sydney with professional, eco-friendly pressure cleaning services. We bring the shine back to your property.
+              Transforming homes across The Hills District with professional, eco-friendly pressure cleaning services. We bring the shine back to your property.
             </p>
             <div className="flex gap-4">
               {/* Social placeholders */}
@@ -22,15 +22,15 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-white font-bold mb-6">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="hover:text-brand-blue transition-colors">Driveway Cleaning</a></li>
-              <li><a href="#" className="hover:text-brand-blue transition-colors">House Washing</a></li>
-              <li><a href="#" className="hover:text-brand-blue transition-colors">Roof Cleaning</a></li>
-              <li><a href="#" className="hover:text-brand-blue transition-colors">Patio & Deck</a></li>
-              <li><a href="#" className="hover:text-brand-blue transition-colors">Commercial</a></li>
+              <li><a href="#" className="hover:text-brand-blue transition-colors">Pressure Cleaning</a></li>
+              <li><a href="#" className="hover:text-brand-blue transition-colors">Concrete Sealing</a></li>
+              <li><a href="#" className="hover:text-brand-blue transition-colors">Concrete Painting</a></li>
+              <li><a href="#" className="hover:text-brand-blue transition-colors">Deck Maintenance</a></li>
+              <li><a href="#" className="hover:text-brand-blue transition-colors">Commercial Wash</a></li>
             </ul>
           </div>
 
@@ -39,22 +39,22 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
-                <span>1300 123 456</span>
+                <span>0408 599 279</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
-                <span>hello@sydneypressure.com.au</span>
+                <span>elitecleanhills@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
-                <span>Serving Greater Sydney & Surrounding Suburbs</span>
+                <span>Serving The Hills District & Greater Sydney</span>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>&copy; {new Date().getFullYear()} Sydney Pressure Cleaners. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Eliteclean. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

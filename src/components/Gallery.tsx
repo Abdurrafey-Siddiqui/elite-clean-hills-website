@@ -4,15 +4,15 @@ import { ArrowLeftRight } from 'lucide-react';
 const galleryItems = [
   {
     id: 1,
-    title: "Driveway Restoration",
-    before: "https://images.unsplash.com/photo-1518225852033-04983617150c?q=80&w=1000&auto=format&fit=crop", // Placeholder dirty
+    title: "Concrete Sealing & Painting",
+    before: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop", // Replaced broken placeholder
     after: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop", // Placeholder clean
   },
   {
     id: 2,
-    title: "Patio Deep Clean",
+    title: "Deck Maintenance",
     before: "https://images.unsplash.com/photo-1585128719715-46776b56a0d1?q=80&w=1000&auto=format&fit=crop",
-    after: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1000&auto=format&fit=crop",
+    after: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1000&auto=format&fit=crop", // Updated Deck after image
   },
   {
     id: 3,
@@ -28,10 +28,10 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
-            See the <span className="text-brand-blue">Transformation</span>
+            Before & After <span className="text-brand-blue">Gallery</span>
           </h2>
           <p className="text-lg text-slate-600">
-            Don't just take our word for it. Slide to see the dramatic difference our professional pressure cleaning makes.
+            Don't just take our word for it. Slide to see the dramatic difference our professional cleaning, sealing, and maintenance makes.
           </p>
         </div>
 
@@ -39,8 +39,8 @@ export default function Gallery() {
           {galleryItems.map((item, idx) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.2 }}
               className="group relative rounded-2xl overflow-hidden shadow-xl shadow-slate-200/50 bg-white"
@@ -59,7 +59,7 @@ export default function Gallery() {
                 <div className="absolute top-4 right-4 bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   After
                 </div>
-                
+
                 {/* Slider Handle Indicator */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-slate-800 opacity-100 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none">
                   <ArrowLeftRight className="w-5 h-5" />
