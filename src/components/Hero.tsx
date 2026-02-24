@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/60 sm:bg-black/40 lg:bg-black/20"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-between h-full pt-20 lg:pt-0 gap-12 lg:gap-8 xl:gap-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-between h-full pt-32 lg:pt-0 gap-12 lg:gap-8 xl:gap-16">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
